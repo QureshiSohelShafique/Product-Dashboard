@@ -1,0 +1,102 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #1c1c1e; /* Dark background */
+  color: #e0e0e0; /* Light text */
+}
+
+/* Main app container */
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center items horizontally */
+  justify-content: flex-start; /* Align items to start for better spacing */
+  min-height: 100vh;
+  padding: 20px;
+}
+
+/* Header styling */
+h1 {
+  font-size: 3rem;
+  color: #ffffff;
+  margin: 30px 0; /* Increased margin for spacing */
+  text-align: center; /* Center the text */
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Subtle shadow for depth */
+  width: 100%; /* Ensure the heading takes full width */
+  display: flex; /* Use flex to center the heading */
+  justify-content: center; /* Center the heading */
+}
+
+/* Center the heading within its container */
+h1 {
+  flex: 1; /* This allows it to grow and fill the space */
+}
+
+/* Chart container */
+.chart-container {
+  width: 100%; /* Use full width */
+  max-width: 900px; /* Max width for larger screens */
+  margin-bottom: 30px; /* Space below chart */
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+  background-color: #2c2c2e; /* Dark card background */
+  padding: 20px; /* Added padding for spacing */
+}
+
+/* List styling */
+ul {
+  list-style: none;
+  padding: 0;
+  width: 100%; /* Use full width */
+  max-width: 900px; /* Max width for larger screens */
+}
+
+/* Individual list item styling */
+li {
+  margin: 15px 0;
+  padding: 20px;
+  background-color: #3a3a3c; /* Card background color */
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+  transition: transform 0.2s, box-shadow 0.2s;
+  width: 100%; /* Make list items full width */
+}
+
+/* Hover effect for list items */
+li:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.7);
+}
+
+/* Responsive styling */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2.5rem; /* Adjust font size for smaller screens */
+  }
+
+  li {
+    padding: 15px; /* Adjust padding for smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 2rem; /* Further adjust font size for very small screens */
+  }
+
+  li {
+    padding: 10px; /* Further adjust padding for very small screens */
+  }
+}
+
+/* Chart styling to ensure it fits nicely */
+.chartjs-render-monitor {
+  width: 100% !important; /* Ensure the chart takes full width */
+  height: 400px !important; /* Set a fixed height for the chart */
+}
