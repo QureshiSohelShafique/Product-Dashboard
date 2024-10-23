@@ -14,8 +14,8 @@ Styling: Custom CSS for a modern dark theme
 
 ## Snapshots
 
-![alt text](photos/data.png)
 ![alt text](photos/Dashboard.png)
+![alt text](photos/data.png)
 
 # Getting Started
 Clone the repository.
